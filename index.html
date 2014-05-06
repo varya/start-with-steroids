@@ -6,6 +6,11 @@
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen.css">
+    <style>
+        .slide ul {
+            font-size: 1.5em;
+        }
+    </style>
 </head>
 <body class="list">
 	<header class="caption">
@@ -68,19 +73,116 @@
             #summary .appgyver {
                 font-weight: 400;
             }
-            #summary ul {
-                font-size: 1.5em;
-            }
         </style>
 	</div></section>
 	<section class="slide"><div>
 		<h2>Install the tools</h2>
+        <pre><code>$ node -v
+v0.10.25
+
+$ npm install steroids -g
+        </code></pre>
 	</div></section>
 	<section class="slide"><div>
-		<h2>Create an app</h2>
+		<h2>Hello world!</h2>
+        <pre><code>$ steroids create myProject
+$ cd myProject
+
+$ steroids connect --watch
+
+simulator
+        </code></pre>
 	</div></section>
 	<section class="slide"><div>
 		<h2>Native UI</h2>
+        <ul>
+            <li>Tab bar</li>
+            <li>Navigation bar</li>
+            <li>Modal screens</li>
+        </ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Tab Bar</h2>
+        <pre><code>$ vim config/application.coffee</code></pre>
+        <pre><code>steroids.config.tabBar.enabled = true
+steroids.config.tabBar.tabs = [
+  {
+    title: "IndeX"
+    icon: "icons/pill@2x.png"
+    location: "http://localhost/index.html"
+  },
+  {
+    title: "Internet"
+    icon: "icons/telescope@2x.png"
+    location: "http://www.google.com"
+  }
+]
+        </code></pre>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Generator</h2>
+        <pre><code>$ steroids generate example &lt;exampleName&gt;
+$ steroids generate tutorial &lt;tutorialName&gt;
+$ steroids generate ng-resource
+        </code></pre>
+	</div></section>
+    <section class="slide"><div>
+        <ul>
+            <li>accelerometer
+                <span class="note">Access the device's accelerometer.</span></li>
+            <li>animation
+                <span class="note">Using native animations without moving to another document (iOS-only).</span></li>
+            <li>audio
+                <span class="note">Play back audio files through Cordova's Media API.</span></li>
+            <li>compass
+                <span class="note">Access the device's compass.</span></li>
+            <li>device
+                <span class="note">Access the device properties.</span></li>
+            <li>drumMachine
+                <span class="note">A simple drum machine.</span></li>
+            <li>geolocation
+                <span class="note">Access the device's geolocation data.</span></li>
+            <li><code>modal</code>
+                <span class="note">Using the modal window.</span></li>
+            <li><code>notification</code>
+                <span class="note">Access native notifications.</span></li>
+            <li>preload
+                <span class="note">Preload WebViews to have them available immediately.</span></li>
+            <li>storage
+                <span class="note">Access Cordova's SQL Storage API.</span></li>
+        </ul>
+        <style>
+            .slide ul {
+                font-size: 0.8em;
+                font-weight: 700;
+            }
+            .slide ul .note {
+                color: #999;
+                font-weight: 400;
+            }
+        </style>
+    </div></section>
+	<section class="slide"><div>
+		<h2>Notifications</h2>
+        <pre><code>navigator.notification.alert(
+    'You are the winner!',  // message
+    alertDismissed,         // callback
+    'Game Over',            // title
+    'Done'                  // buttonName
+);</code></pre>
+    </code></pre>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Navigation bar buttons</h2>
+        <pre><code>var loginButton =
+    new steroids.buttons.NavigationBarButton();
+loginButton.title = "the Button";
+steroids.view.navigationBar.update({
+    buttons: {
+      right: [loginButton]
+    }
+});</code></pre>
+    </code></pre>
 	</div></section>
 	<section class="slide"><div>
 		<h2>Debugging, sharing, reloading</h2>
