@@ -182,7 +182,16 @@ steroids.view.navigationBar.update({
       right: [loginButton]
     }
 });</code></pre>
-    </code></pre>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Modal views</h2>
+        <pre><code>function showModal() {
+  var webView =
+    new steroids.views.WebView("/views/modalExample/show.html");
+  steroids.modal.show(webView);
+}</code></pre>
+        <pre><code>&lt;a class="button button-block"
+  ontouchend="showModal()"&gt;Open modal&lt;/a&gt;</code></pre>
 	</div></section>
 	<section class="slide"><div>
 		<h2>Debugging, sharing, reloading</h2>
