@@ -7,8 +7,11 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen.css">
     <style>
-        .slide ul {
+        .slide {
             font-size: 1.5em;
+        }
+        .slide pre {
+            font-size: 0.8em;
         }
     </style>
 </head>
@@ -56,6 +59,7 @@
             <li>app-store ready in a few minutes</li>
             <li>with <code>native performance</code></li>
 		</ul>
+        <p><a href="http://www.appgyver.com/steroids">appgyver.com/steroids</a>
         <style>
             #summary h2 {
                 display: inline-block;
@@ -144,7 +148,7 @@ $ steroids generate ng-resource
         </ul>
         <style>
             #examples-list ul {
-                font-size: 0.8em;
+                font-size: 0.55em;
                 font-weight: 700;
             }
             #examples-list ul .note {
@@ -184,12 +188,22 @@ steroids.view.navigationBar.update({
         <pre><code>&lt;a class="button button-block"
   ontouchend="showModal()"&gt;Open modal&lt;/a&gt;</code></pre>
 	</div></section>
-	<section class="slide"><div>
-		<h2>Debugging, sharing, reloading</h2>
+	<section class="slide" id="sharing"><div>
+		<h2>Sharing, deploying & reloading</h2>
         <ul>
-            <li>AppGyver Scaner</li>
-            <li>Cloud storage</li>
+            <li>share with AppGyver Scaner</li>
+            <li>deploy to the cloud
+                <pre><code>    $ steroids deploy</code></pre>
+            </li>
+            <li>configure and push to the store
+            <pre><code>    <a href="https://cloud.appgyver.com/applications">cloud.appgyver.com</a></code></pre>
+            </li>
         </ul>
+        <style>
+            #sharing pre {
+                margin-bottom: 0;
+            }
+        </style>
 	</div></section>
 	<section class="slide" id="links"><div>
 		<h2>Learn more</h2>
@@ -202,6 +216,9 @@ steroids.view.navigationBar.update({
         </ul>
 
         <style>
+            #links {
+                font-size: 1em;
+            }
             #links .academy:before {
                 content: "";
                 background-image:url("pictures/academy_icon.png");
@@ -228,6 +245,28 @@ steroids.view.navigationBar.update({
                 position: absolute;
                 top: 1.5em;
                 left:150px;
+                text-decoration: none;
+                background: none;
+            }
+        </style>
+	</div></section>
+	<section class="slide" id="wrap"><div>
+		<h2>HTML5 mobile apps on Steroids</h2>
+        <p>Varya Stepanova @ FrontTrends2014</p>
+        <ul>
+            <li>
+                <a href="http://varya.me/">varya.me</a>
+            </li>
+            <li>
+                <a href="http://twitter.com/varya_en">@varya_en</a>
+            </li>
+            <li>
+                <a href="mailto:mail@varya.me">mail@varya.me</a>
+            </li>
+        </ul>
+        <style>
+            #wrap a,
+            #wrap a:link {
                 text-decoration: none;
                 background: none;
             }
