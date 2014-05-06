@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>HTML5 mobile app on Steroids</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -14,7 +14,7 @@
 </head>
 <body class="list">
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
+		<h1>HTML5 mobile app on Steroids</h1>
 		<p>Yours Truly, Famous Inc.</p>
 	</header>
 	<section class="slide cover" id="Cover"><div>
@@ -106,16 +106,7 @@ simulator
         <pre><code>$ vim config/application.coffee</code></pre>
         <pre><code>steroids.config.tabBar.enabled = true
 steroids.config.tabBar.tabs = [
-  {
-    title: "IndeX"
-    icon: "icons/pill@2x.png"
-    location: "http://localhost/index.html"
-  },
-  {
-    title: "Internet"
-    icon: "icons/telescope@2x.png"
-    location: "http://www.google.com"
-  }
+  ...
 ]
         </code></pre>
 	</div></section>
@@ -126,7 +117,7 @@ $ steroids generate tutorial &lt;tutorialName&gt;
 $ steroids generate ng-resource
         </code></pre>
 	</div></section>
-    <section class="slide"><div>
+    <section class="slide" id="examples-list"><div>
         <ul>
             <li>accelerometer
                 <span class="note">Access the device's accelerometer.</span></li>
@@ -152,11 +143,11 @@ $ steroids generate ng-resource
                 <span class="note">Access Cordova's SQL Storage API.</span></li>
         </ul>
         <style>
-            .slide ul {
+            #examples-list ul {
                 font-size: 0.8em;
                 font-weight: 700;
             }
-            .slide ul .note {
+            #examples-list ul .note {
                 color: #999;
                 font-weight: 400;
             }
@@ -195,6 +186,10 @@ steroids.view.navigationBar.update({
 	</div></section>
 	<section class="slide"><div>
 		<h2>Debugging, sharing, reloading</h2>
+        <ul>
+            <li>AppGyver Scaner</li>
+            <li>Cloud storage</li>
+        </ul>
 	</div></section>
 	<section class="slide" id="links"><div>
 		<h2>Learn more</h2>
