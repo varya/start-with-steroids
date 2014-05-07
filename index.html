@@ -95,25 +95,9 @@ $ npm install steroids -g
 $ cd myProject
 
 $ steroids connect --watch
+# <b>AppGyver Scaner</b>
 
 simulator
-        </code></pre>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Native UI</h2>
-        <ul>
-            <li>Tab bar</li>
-            <li>Navigation bar</li>
-            <li>Modal screens</li>
-        </ul>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Tab Bar</h2>
-        <pre><code>$ vim config/application.coffee</code></pre>
-        <pre><code>steroids.config.tabBar.enabled = true
-steroids.config.tabBar.tabs = [
-  ...
-]
         </code></pre>
 	</div></section>
 	<section class="slide"><div>
@@ -173,6 +157,15 @@ $ steroids generate ng-resource
             }
         </style>
     </div></section>
+	<section class="slide"><div>
+		<h2>Tab Bar</h2>
+        <pre><code>$ vim config/application.coffee</code></pre>
+        <pre><code>steroids.config.tabBar.enabled = true
+steroids.config.tabBar.tabs = [
+  ...
+]
+        </code></pre>
+	</div></section>
 	<section class="slide"><div>
 		<h2>Notifications</h2>
         <pre><code>navigator.notification.alert(
