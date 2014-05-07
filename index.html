@@ -122,34 +122,48 @@ $ steroids generate ng-resource
         </code></pre>
 	</div></section>
     <section class="slide" id="examples-list"><div>
-        <ul>
-            <li>accelerometer
-                <span class="note">Access the device's accelerometer.</span></li>
-            <li>animation
-                <span class="note">Using native animations without moving to another document (iOS-only).</span></li>
-            <li>audio
-                <span class="note">Play back audio files through Cordova's Media API.</span></li>
-            <li>compass
-                <span class="note">Access the device's compass.</span></li>
-            <li>device
-                <span class="note">Access the device properties.</span></li>
-            <li>drumMachine
-                <span class="note">A simple drum machine.</span></li>
-            <li>geolocation
-                <span class="note">Access the device's geolocation data.</span></li>
-            <li><code>modal</code>
-                <span class="note">Using the modal window.</span></li>
-            <li><code>notification</code>
-                <span class="note">Access native notifications.</span></li>
-            <li>preload
-                <span class="note">Preload WebViews to have them available immediately.</span></li>
-            <li>storage
-                <span class="note">Access Cordova's SQL Storage API.</span></li>
-        </ul>
+        <div class="left">
+            <h3>Cordova API</h3>
+            <ul>
+                <li>Accelerometer</li>
+                <li>Camera</li>
+                <li>Compass</li>
+                <li>Contacts</li>
+                <li>Geolocation</li>
+            </ul>
+        </div>
+        <div class="right">
+            <h3>Steroids native UI</h3>
+            <ul>
+                <li>steroids.<code>modal</code></li>
+                    <li>steroids.layers</li>
+                <li>steroids.view.<code>navigationBar</code></li>
+                <li>steroids.config.<code>tabBar</code></li>
+            </ul>
+            <h3>Steroids API</h3>
+            <ul>
+                <li>App & Device </li>
+                <li>File System</li>
+                <li>Media</li>
+            </ul>
+        </div>
         <style>
+            #examples-list .left {
+                float: left;
+                margin-right: 3em;
+            }
+            #examples-list .right {
+                float: right;
+                margin-right: 3em;
+            }
+            #examples-list h3 {
+                font-size: 0.85em;
+            }
             #examples-list ul {
                 font-size: 0.55em;
                 font-weight: 700;
+                padding-bottom: 0;
+                margin-bottom: 20px;
             }
             #examples-list ul .note {
                 color: #999;
