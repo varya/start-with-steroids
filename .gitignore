@@ -1,1 +1,1 @@
-node_modules!node_modules/shower-ribbon
+node_modules!node_modules/shower-ribbon!node_modules/shower-core/shower.min.js
